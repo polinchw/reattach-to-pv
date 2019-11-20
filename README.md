@@ -6,7 +6,7 @@ to the PV when a Helm chart is reinstalled.
 
 ### Set the PV to Retain
 
-This is an example of how to set an existing PV to retained if the PVC or Helm 
+This is an example of how to set an existing PV to be retained if the PVC or Helm 
 chart is deleted.
 
 ```
