@@ -31,7 +31,7 @@ kubectl patch pv pvc-e6a32e2b-c69a-44c2-9993-abbea1d8620a -p '{"spec":{"claimRef
 
 ### Set the PVC to use the volumeName
 
-In order to re-deploy a Helm chart an re-attached to the preexisting PV you have to 
+In order to re-deploy a Helm chart and re-attached to the preexisting PV you have to 
 mention the name of the PV in the PVC with the `volumeName` field.
 
 ```
@@ -66,7 +66,7 @@ You can now reinstall the Helm chart and it will reuse the original PV.
 helm install --name tomcat --namespace tomcat . -f values.yaml
 ```
 
-Doing a get on the pvc will show the attachment to the original PV.
+Doing a get on the PVC will show the attachment to the original PV.
 
 ```
 NAME     STATUS   VOLUME                                     CAPACITY   ACCESS MODES   STORAGECLASS   AGE
