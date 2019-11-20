@@ -1,6 +1,6 @@
 ## Reattaching to a Kubernetes PV
 
-This readme is shows how to retain a Kubernetes Persistent Volume (PV)
+This readme shows how to retain a Kubernetes Persistent Volume (PV)
 after a PVC or Helm chart is deleted.  It then shows how to re-attach
 to the PV when a Helm chart is reinstalled.
 
